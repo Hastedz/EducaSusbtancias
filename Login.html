@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login com Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #a8e063, #56ab2f);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            background-color: #617b4c;
+        }
+
+        .btn-nav:hover {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+
+        .btn-nav {
+            color: rgb(255, 255, 255);
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            margin: auto; /* Centraliza na página */
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #2f4f2f;
+        }
+
+        .form-control {
+            border-radius: 10px; /* Inputs levemente arredondados */
+        }
+
+        .btn-login {
+            background-color: #2f4f2f;
+            color: white;
+            border-radius: 50px; /* Torna o botão totalmente arredondado */
+            padding: 10px 20px;
+        }
+
+        .btn-login:hover {
+            background-color: #245f24;
+        }
+
+        .links a {
+            color: #2f4f2f;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+        <!-- Configurações Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Configurações</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container mt-1 bg-secondary">
+                    <a href="#" class="btn">Conta</a>
+                </div>
+                <div class="container mt-3 bg-secondary">
+                    <a href="#" class="btn">Login</a>
+                </div>
+            </div>
+        </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-sm-top">
+        <div class="container-fluid">
+            <img src="EducaSubstanciasLogo.png" alt="Logo" width="7%" height="7%">
+            <!-- Search Bar -->
+            <div class="container-fluid g-5" style="width: 55%;">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit" style="position: relative; right: 6%;">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn me-2 btn-nav" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn me-2 btn-nav" aria-current="page" href="SobreNos.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn me-2 btn-nav" href="Diario.html" aria-current="page">Diário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-current="page">Configurações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Login-->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Senha" required>
+            </div>
+            <button type="submit" class="btn btn-login w-100">Entrar</button>
+        </form>
+        <div class="links mt-3">
+            <a href="Cadastrar.html">Não possui conta? Cadastrar</a> | 
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    .btn-nav:hover{
+    background-color: #ffffff;;
+    color: rgb(0, 0, 0);
+    }
+    .btn-nav{
+      color: white;
+    }
+</style>
+ 
+<body>
+ <!--ConfiguraçõesOFFCanvas-->
+ <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Configurações</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container mt-1 bg-secondary">
+      <a href="Conta.html" class="btn ">Conta</a>
+    </div>
+    <div class="container mt-3 bg-secondary">
+      <a href="Login.html" class="btn ">Login</a>
+    </div>
+  </div>
+</div>
+<!--Nav-->
+    <nav class="navbar navbar-expand-lg sticky-sm-top" style="background-color: #617b4c;">
+        <div class="container-fluid">
+          <img src="EducaSubstanciasLogo.png" alt="Bootstrap" width="7%" height="7%">
+<!--SearchBar-->
+            <div class="container-fluid g-5" style="width: 55%;">
+              <form class="d-flex" role="search">
+                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit" style="position: relative; right: 6%;">
+                    <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+<!--Toggler-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+<!--Navbar-->          
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="btn me-2 btn-nav" aria-current="page" href="Home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn  me-2 btn-nav" aria-current="page" href="SobreNos.html">SobreNós</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn me-2 btn-nav" href="Diario.html" aria-current="page">Diario</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-current="page">Configurações</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<!--Video-->
+<section class="text-center text-white" style="background-color: #84aa64;">
+    <div class="container p-4">
+      <section class="">
+        <h1 class="display-2 fw-bold">Quem Somos</h1>
+        <p class="text-center">Este é um vide pitch realizado por nosso grupo onde nos apresentamos</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6">
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="shadow-1-strong rounded"
+                src="video pitch.mp4"
+                title="YouTube video"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+</section>
+<!--explicando sobre o projeto-->
+  <section class="" style="background-color: #ffffff; ">
+    <div class="container py-2">
+      <div class=" flex-lg-row g-5">
+          <div class=" ">
+              <div class="lc-block mb-2 mt-lg-2">
+                  <div editable="rich">
+                      <h2 class="fw-bold display-2 text-center">Nosso projeto</h2>
+                  </div>
+              </div>
+              <p>Nós somos o EducaSubstâncias, um projeto que teve seu início como um trabalho escolar em 2024. Decidiu-se como objetivo, a criação de uma plataforma de suporte para dependentes químicos. O projeto reúne contatos de clínicas especializadas no tratamento do vício,  visando dar aos dependentes e familiares, uma visão centralizada dos diversos meios de suporte para sair da situação em questão.  Com um longo período de pesquisas estudos e realização de etapas de aprendizado, foi criada a marca e estrutura do projeto. Sabemos que esse tópico é de extrema delicadeza, e por este motivo, precisa ser mais abordado e divulgado socialmente. Com isso estamos fazendo a nossa parte e construindo o próximo passo. Queremos ver no futuro uma redução significativa dos índices de uso de drogas ilícitas no Brasil.</p>
+              <div class="lc-block">
+                  <div editable="rich">
+                      <p class="lead mb-5">
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="" style="background-color: #84aa64;">
+    <div class="container py-2">
+      <div class="row flex-lg-row-reverse g-5">
+          <div class="col-10 mx-auto col-sm-8 col-lg-6 d-lg-block d-none container-rolavel overflow-auto bg-white">
+            <p>A pesquisa tem como objetivo apresentar os efeitos do uso da maconha no
+              organismo humano, seus resultados psicológicos, principais características da dependência, e
+              um breve apontamento da relação da família com a situação do usuário. METODOLOGIA:
+              Análise de artigos científicos, apontadores de temas como, efeitos da cannabis, dependência
+              química, consequências para os usuários e familiares, juntamento com estudos quantitativos
+              sobre o uso da maconha e outras drogas. Os levantamentos considerados correspondem
+              exclusivamente a artigos publicados entre os anos de 2006 e 2018, com dados de referência
+              nacional. RESULTADOS: A maconha é uma das drogas mais consumidas no Brasil, constando
+              primeiros contatos a partir dos 13 anos de idade. Seus efeitos englobam clareamento de ideias
+              e sensação de bem-estar, e seus malefícios quadros de câncer pulmonar. O uso moderado não
+              torna seus efeitos diferentes, e o consumo por parte de usuários crônicos resulta em experiência
+              de asma e bronquite. Seu consumo pode ser relacionado a possíveis problemáticas presentes na
+              vida dos dependentes. Os familiares têm sua parte no suporte. CONCLUSÃO: Para medidas
+              afetivas por parte de organizações sobre o aumento de usuários da cannabis, é necessário um
+              estudo maior sobre o tema, que englobe os reais efeitos e causas do consumo da maconha.
+              Palavras-chave: cannabis 1; dependência química 2; efeitos do vício 3.</p>
+          </div>
+          <div class="col-lg-6 ">
+              <div class="lc-block mb-2 mt-lg-5">
+                  <div editable="rich">
+                      <h2 class="fw-bold display-2 text-white">Artigo Cientifico</h2>
+                  </div>
+              </div>
+              <div class="lc-block mb-3 ">
+                  <div editable="rich">
+                      <p class="lead text-white">O nosso artigo científico: CANNABIS: SEUS EFEITOS, CARACTERÍSTICAS E DEPENDÊNCIA é uma base para todo o conteúdo que colocamos aqui no site, como: Seus resultados psicológicos, principais características da dependência, e um breve apontamento da relação da família com a situação do usuário. Fizemos esse artigo para mostrar de uma forma mais detalhada como a Cannabis Sativa (a maconha) pode afetar não só o usuário, como também sua família e amigos. Esse artigo foi desenvolvido por toda a nossa equipe: MARQUES, Ana Júlia; LIMA, Giovanna; CARVALHO, Lucas; MENDES, Pedro; SILVESTRE, Pietro; MORAES, Renato; XAVIER, Rafael.
+                      </p>
+                      <div class="">
+                        <a href="https://drive.google.com/file/d/1DkPAG5VMv65Tacf2fGyMER3pUZ66Aoqe/view?usp=drive_link" class="btn btn-success">Ver Mais</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          .
+      </div>
+  </div>
+</section>
+<style>
+    .container-rolavel {
+        height: 500px;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+</style>
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Informações Adicionais</span>
+    </div>
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+ 
+</section>
+ 
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Sobre nos
+          </h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde placeat accusamus doloribus mollitia, necessitatibus velit voluptate quasi. Atque, esse repellat.
+          </p>
+        </div>
+       
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Redes Sociais
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Twitter</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Facebook</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Instagram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"></a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
+          <p><i class="fas fa-home me-3"></i> Taboão da serra, SP</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            EducaSubstancias@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 11 254 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 11 234 567 89</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
